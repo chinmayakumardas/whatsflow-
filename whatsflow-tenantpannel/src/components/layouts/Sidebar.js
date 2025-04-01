@@ -36,13 +36,15 @@ const menuItems = [
   // for tenats
 
   { icon: LayoutDashboard, label: 'Dashboard', href: '/dashboard' },
+  { icon: Bell, label: 'Notifications & Alerts', href: '/notifications' },
   { icon: MessageCircle, label: 'Message Templates', href: '/templates' },
   { icon: Zap, label: 'Campaigns & Automation', href: '/campaigns' },
-  { icon: Code, label: 'API Integration', href: '/api-integration' },
-  { icon: Users, label: 'User Management', href: '/users' },
+  { icon: Users, label: 'Customers', href: '/customers' },
+  { icon: Users, label: 'Agent Management', href: '/agents' },
   { icon: ShoppingCart, label: 'Billing & Subscription', href: '/billing' },
-  { icon: Bell, label: 'Notifications & Alerts', href: '/notifications' },
+  { icon: Code, label: 'API Integration', href: '/api-integration' },
   { icon: Settings, label: 'Settings & Profile', href: '/settings' },
+  { icon: Settings, label: 'Test', href: '/test' },
 ];
 
 export default function Sidebar() {
@@ -54,7 +56,7 @@ export default function Sidebar() {
       collapsed ? 'w-16' : 'w-64'
     }`}>
       <div className="flex items-center justify-between p-4 border-b">
-        {!collapsed && <h1 className="text-xl font-bold">Admin Panel</h1>}
+        {!collapsed && <h1 className="text-xl font-bold">Business/Agency</h1>}
         <button
           onClick={() => setCollapsed(!collapsed)}
           className="cursor-pointer p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"

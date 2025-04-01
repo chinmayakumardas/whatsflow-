@@ -3,7 +3,7 @@ import "../globals.css";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export const metadata = {
-  title: "Metaflow Admin Pannel",
+  title: "Metaflow a complete whatsapp CRM Automation Platform",
   description: "Welcome to metaFlow a complete whatsapp automation Platform!",
 };
 

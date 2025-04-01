@@ -18,9 +18,9 @@ const mockLogin = async (credentials) => {
     return {
       user: {
         id: 1,
-        name: 'Chinmaya(Admin)',
+        name: 'Flikart',
         email: credentials.email,
-        role: 'admin',
+        role: 'tenant',
       },
       token: 'mock-jwt-token',
     };
@@ -89,7 +89,7 @@ const AuthFormContainer = () => {
         className="w-[50vw] h-auto max-w-md bg-white flex justify-center flex-col rounded-xl border border-white/10 p-8 space-y-6 transition-all duration-500 ease-in-out"
       >
         <CardHeader>
-          <CardTitle className="text-center">{isReset ? 'Reset Password' : 'Admin Login'}</CardTitle>
+          <CardTitle className="text-center">{isReset ? 'Reset Password' : 'Business/Agency Login'}</CardTitle>
         </CardHeader>
 
         <CardContent className="space-y-6 w-full">
